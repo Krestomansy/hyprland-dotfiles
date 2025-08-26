@@ -5,7 +5,7 @@
       "alignment": "left",
       "segments": [
         {
-          "foreground": "#BF616a",
+          "foreground": "#88c0d0",
           "style": "plain",
           "template": "<#5e81ac>\u250f[</>{{ .UserName }}<#5e81ac>]</>",
           "type": "session"
@@ -34,7 +34,7 @@
           "type": "kubectl"
         },
         {
-          "foreground": "#BF616a",
+          "foreground": "#d8dee9",
           "style": "plain",
           "template": "<#5e81ac>[</>\uf0e7<#5e81ac>]</>",
           "type": "root"
@@ -53,17 +53,25 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#BF616a",
+          "foreground": "#88c0d0",
           "properties": {
             "style": "full"
           },
           "style": "plain",
           "template": "<#5e81ac>\u2516[</>{{ .Path }}<#5e81ac>]</>",
           "type": "path"
+        },
+
+        {
+          "type": "python",
+          "style": "plain",
+          "foreground": "#a3be8c",
+          "template": "<#5e81ac>[</>  {{  .Full }} {{ .Venv }}<#5e81ac>]</>"
         }
       ],
       "type": "prompt"
     },
+    
     {
       "alignment": "right",
       "segments": [
